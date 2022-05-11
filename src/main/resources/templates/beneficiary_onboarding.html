@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		::after {
+			box-sizing: border-box
+		}
+
+		::before {
+			box-sizing: border-box
+		}
+	</style>
+	<style type="text/css">
+	</style>
+</head>
+
+<body style="box-sizing: border-box;" data-gr-c-s-loaded="true">
+	<div class="mail_container"
+		style="box-sizing: border-box; width: 600px; margin: auto; font-family: &amp; #39; Proxima Nova Thin&amp;#39; , sans-serif; border: solid 1px #dddddd;">
+		<div class="padding-15 mail_content"
+			style="box-sizing: border-box; padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px;background-color: #ffffffb3; font-size: 12px; color: #000000;">
+			<!-- <p> -->
+			Dear <b style="box-sizing: border-box;" th:text="${beneficiaryName}"> </b>,
+			<!-- </p> -->
+			<div class="di w_100" style="box-sizing: border-box; display: inline-block; width: 100%;">
+				<p style="box-sizing: border-box;">
+					You are successfully registered to the platform. To proceed, please log in with the credentials
+					below.
+					<br><br>
+					<b>Username: </b><b style="box-sizing: border-box;" th:text="${userName}"></b>
+					<br>
+					<b>Password: </b><b style="box-sizing: border-box;" th:text="${password}"></b>
+				</p>
+
+				<p style="background-color:#341c78;color:white">
+					<b>
+						Do not disclose any confidential information such as
+						<span class="il">Username</span>, Password,
+						OTP etc. to anyone.
+					</b>
+				</p>
+
+				<p style="box-sizing: border-box; font-size: 11px; color: #341c78;">
+					Thanks and Regards,<br>
+					The Platform.
+				</p>
+
+				<div>
+					<hr style="color: #341c78;">
+					<p style="box-sizing: border-box; font-size: 11px; color: #341c78;">
+						<i>** Please do not reply to this email as it is a computer generated email.</i>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="footer_mail di w_100"
+			style="padding: 13px; font-size: 13px; /* border-bottom:1px solid #ddd; */ border-top: 1px solid #ddd; display: inline-block; width: calc(100% - 26px);">
+			<span
+				style="box-sizing: border-box; text-align: left; float: left; position: relative; font-size: 11px; color: #341c78; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
+				Powered by The Good Platform</span>
+		</div> -->
+	</div>
+</body>
+
+</html>

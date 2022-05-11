@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href='http://fonts.googleapis.com/css?family=Roboto'
+	rel='stylesheet' type='text/css' />
+<!-- use the font -->
+<style>
+body {
+	font-family: 'Roboto', sans-serif;
+}
+</style>
+</head>
+<body>
+	<p th:text="${'Dear ' + name + ','}"></p>
+	<p>
+		Please log in with the username and password provided below, <br />
+
+
+	</p>
+	<p>
+
+
+		<a th:href="@{${downloadLink}}" th:text="${downloadLink}"></a>
+	</p>
+	<p th:text="${'Username: ' + username}"></p>
+	<p th:text="${'Password: ' + passcode}"></p>
+	<br />
+	<i style="font-weight: 500; font-size: 12px; line-height: 15px;">Disclaimer
+		: As a user of the application, please make sure the information
+		uploaded on the application does not violate the provisions of the
+		Terms of Service (Hyperlink provisions: Intellectual Property Rights
+		and Prohibited Use). Please do not display, upload, modify, publish,
+		transmit, store or share defamatory, obscene, pornographic,
+		paedophilic, invasive of women’s integrity, bodily privacy, ethnically
+		objectionable, harmful to a child, threatening integrity of the nation
+		or violating any laws of the country being in force. We have updated
+		our Terms of Service effective October 11, 2021 . Please <a
+		href="http://tgpweb-test.consumerlinks.in:3000/privacy-policy">click
+			here</a> to read our updated Policy.</october>
+	</i>
+	<br />
+	<p>This is a system generated email. Please do not reply to this
+		email.</p>
+	<p>
+		Thanks and Regards <br />
+	</p>
+</body>
+</html>

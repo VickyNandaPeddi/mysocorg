@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href='http://fonts.googleapis.com/css?family=Roboto'
+	rel='stylesheet' type='text/css' />
+<!-- use the font -->
+<style>
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 48px;
+}
+</style>
+</head>
+<body>
+	<p th:text="${'Dear ' + name + ','}"></p>
+
+	<p>You have registered yourself as a <a th:text="${role}"></a> for <b th:text="${programName}"></b> as directed by <b th:text="${orgName}"></b>. 
+	You are bound by our terms and conditions for <a th:text="${role}"></a>s of Program owners and applicable laws governing your role as a <a th:text="${role}"></a>. You confirm and agree you fully understand that you will not copy, share, or delete any of the information, take, upload, or cause to be uploaded indecent depiction of women or children or anything against national security. You declare and confirm to perform and undertake your voluntary actions in diligent and lawful manner.<br />
+	
+	</p> 
+	
+	<p>Breach of these terms will make you / parties involved criminally liable towards <b th:text="${orgName}"></b> and towards the platform and the parties impacted due to the violation committed by you.<br />	
+	 </p>
+		<p>
+		The APK in the link below requires you to log in with your unique username and password mentioned below, </p>
+
+	<p>
+		Please find the download link for the APK file <a
+			th:href="@{${downloadLink}}" th:text="${downloadLink}"></a>
+	</p>
+	
+	<p><b th:text="${'Username: ' + username}"></b> <br />
+	   <b th:text="${'Password: ' + passcode}"></b><br />
+	<span style="background-color:#ffff33">This is to be kept confidential - please  do not share the Username and Password with anyone</span> </p>
+	
+	<i>This is a system generated email. Please do not reply to this
+		email.</i>
+	<p>
+		Thanks and Regards, <br /> <em th:text="${sign}"></em>
+	</p>
+</body>
+</html>
